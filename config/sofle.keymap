@@ -22,8 +22,8 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -43,11 +43,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE   &kp N1  &kp N2     &kp N3     &kp N4        &kp N5                                 &kp N6     &kp N7  &kp N8            &kp N9             &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q   &kp W      &kp E      &kp R         &kp T                                  &kp Y      &kp U   &kp I             &kp O              &kp P     &kp BACKSLASH
-&kp ESCAPE  &kp A   &kp S      &kp D      &kp F         &kp G                                  &kp H      &kp J   &kp K             &kp L              &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z   &kp X      &kp C      &kp V         &kp B         &kp C_MUTE    &kp ESC    &kp N      &kp M   &kp COMMA         &kp DOT            &kp FSLH  &kp RSHFT
-                    &kp MINUS  &kp EQUAL  &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL     &kp SPACE  &kp ENTER  &mo 1   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp GRAVE         &kp N1  &kp N2     &kp N3     &kp N4        &kp N5                                  &kp N6     &kp N7  &kp N8            &kp N9             &kp N0    &kp BACKSPACE
+&kp TAB           &kp Q   &kp W      &kp E      &kp R         &kp T                                   &kp Y      &kp U   &kp I             &kp O              &kp P     &kp BACKSLASH
+&kp ESCAPE        &kp A   &kp S      &kp D      &kp F         &kp G                                   &kp H      &kp J   &kp K             &kp L              &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X      &kp C      &kp V         &kp B        &kp C_MUTE      &kp ESC    &kp N      &kp M   &kp COMMA         &kp DOT            &kp FSLH  &kp RSHFT
+                          &kp MINUS  &kp EQUAL  &kp LEFT_ALT  &lt 2 SPACE  &kp LEFT_WIN    &kp SPACE  &kp ENTER  &mo 1   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
