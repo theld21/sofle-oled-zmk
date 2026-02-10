@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, \, LEFT CONTROL, A, S, D, F, G, H, J, K, L, ;, '''',
-    LEFT SHIFT, Z, X, C, V, B, MUTE, ESC, N, M, ',', ., /, raise, '-', '=', LEFT ALT, SPACE, LEFT WIN, ENTER, BACKSPACE, lower, '[', ']']
-  lower:
-  - {t: ▽, type: trans}
+  BASE: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, \, LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
+    X, C, V, B, MUTE, PP, N, M, ',', ., /, RSHFT, '`', LALT, LGUI, LOWER, SPACE, ENTER, RAISE, BSPC, RALT, RGUI]
+  LOWER:
+  - '~'
   - F1
   - F2
   - F3
@@ -15,6 +15,67 @@ layers:
   - F9
   - F10
   - F11
+  - '`'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - F12
+  - {t: ▽, type: trans}
+  - '='
+  - '-'
+  - +
+  - '{'
+  - '['
+  - ']'
+  - '}'
+  - _
+  - '|'
+  - ':'
+  - '"'
+  - {t: ▽, type: trans}
+  - <
+  - '>'
+  - /
+  - \
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '~'
+  - '?'
+  - ','
+  - .
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RAISE
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  RAISE:
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - INS
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -26,77 +87,16 @@ layers:
   - '8'
   - '9'
   - '0'
-  - F12
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - KP MULTIPLY
-  - (
-  - )
-  - '|'
-  - {t: ▽, type: trans}
-  - '='
-  - '-'
-  - KP PLUS
-  - '{'
-  - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - ;
-  - ':'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - BT CLR ALL
-  raise:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
   - PSCRN
-  - CMENU
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - CLCK
+  - HOME
   - PG DN
+  - PG UP
+  - END
+  - CLCK
   - LEFT
   - DOWN
+  - UP
   - RIGHT
   - DEL
   - BSPC
@@ -105,26 +105,26 @@ layers:
   - CUT
   - COPY
   - PASTE
+  - REDO
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LOWER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  adjust:
+  ADJUST:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -136,13 +136,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
   - ''
   - ''
   - ''
@@ -150,11 +144,8 @@ layers:
   - ''
   - ''
   - ''
-  - RGB BRD
-  - RGB BRI
   - ''
-  - ''
-  - ''
+  - BRI UP
   - ''
   - ''
   - ''
@@ -164,27 +155,36 @@ layers:
   - ''
   - ''
   - ''
+  - PREV
+  - VOL DN
+  - VOL UP
+  - NEXT
+  - ''
+  - ''
+  - BT CLR ALL
   - ''
   - ''
   - ''
-  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MUTE
+  - BRI DN
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {type: held}
+  - {t: ▽, type: trans}
+  - ''
   - ''
   - ''
 combos:
-- p: [53, 54]
-  k: Alt+F4
+- p: [54, 55]
+  k: ADJUST
